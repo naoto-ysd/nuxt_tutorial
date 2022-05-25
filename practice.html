@@ -4,7 +4,8 @@
     <title>
       My first vue app
     </title>
-    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+
   </head>
   <body>
     <h1>
@@ -13,13 +14,16 @@
     <div id="app">
       {{ message }}
     </div>
+
     <script>
-      var app = new Vue({
-        el: "#app",
-        data: {
-          message: "Hello world"
+    const appdata = {
+      data() {
+        return{
+          message: 'Hello vue'
         }
-      })
+      }
+    }
+    Vue.createApp(appdata).mount('#app')
     </script>
   </body>
 </html>
