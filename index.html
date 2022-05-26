@@ -5,25 +5,23 @@
       My first vue app
     </title>
     <script src="https://unpkg.com/vue@next"></script>
-
   </head>
   <body>
     <h1>
-      vue.js
+      Vue3
     </h1>
     <div id="app">
-      {{ message }}
+      {{message}}
     </div>
-
     <script>
-    const appdata = {
-      data() {
-        return{
-          message: 'Hello vue'
+      const appdata = {
+        data(){
+          return{
+            message: "Hello vue"
+          }
         }
       }
-    }
-    Vue.createApp(appdata).mount('#app')
+      Vue.createApp(appdata).mount('#app')
     </script>
   </body>
 </html>
